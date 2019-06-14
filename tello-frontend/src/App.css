@@ -1,0 +1,141 @@
+.App {
+  max-width: 1000px;
+  margin: auto;
+  height: 100vh;
+}
+.my-btn{
+  padding: 15px 20px;
+  border: none;
+  background: darkblue;
+  cursor: pointer;
+  border-radius: 4px;
+  color:white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.commands-container{
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  color:white;
+  margin-top: 50px;
+  padding: 20px 20px;
+}
+
+.btn-takeoff{
+  background: #0fce0f;
+  grid-area: area-takeoff;
+
+}
+.btn-land{
+  background: white;
+  color: black;
+  grid-area: area-land;
+}
+.command-section-1{
+  padding: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "area-takeoff area-land"
+}
+.command-section-2{
+  padding: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "area-up area-rotate-c"
+  "area-down area-rotate-cc"
+}
+.btn-up{
+  grid-area: area-up;
+}
+.btn-down{
+  grid-area: area-down;
+}
+.btn-rotate-c{
+  grid-area: area-rotate-c;
+}
+.btn-rotate-cc{
+  grid-area: area-rotate-cc;
+}
+.btn-section-2{
+  background: #c75b0b;
+}
+.up-wrap, .down-wrap{
+  display: flex;
+  justify-content: center;
+}
+.middle-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-wrap > span{
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-flip, .btn-horizontal{
+  background: gray;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.status-message{
+  color:white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.label{
+  display: inline-block;
+  color:white;
+  margin-left: 20px;
+  width: 400px;
+}
+.command-status{
+  font-weight: 700;
+  color: red;
+}
+.ok{
+  color: #0fce0f;
+}
+.status-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.modal-body > p {
+  text-align: center;
+}
+.key-table{
+  width: 70%;
+  margin: 40px auto;
+}
+.key-table tr {
+  border-bottom: 1px solid #cccccc;
+}
+.right{
+  text-align: end;
+}
+.left{
+  font-weight: 700;
+}
+.modal-title{
+  margin: auto;
+}
+.modal-footer > button {
+  margin: auto;
+}
